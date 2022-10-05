@@ -11,6 +11,6 @@ A project made in the first year of Institude of technology Paul Sabatier Depart
 ## Simple Usage
 Open the cloned project in Gnat studio
 Run the main program
-![The Graphical User Interface that uses the algorithms to solve and display solved and unsolved grids](http://url/to/img.png](https://github.com/IsmailAlr/Sudoku_Solver/blob/main/GUI.png)
+![The Graphical User Interface that uses the algorithms to solve and display solved and unsolved grids](https://github.com/IsmailAlr/Sudoku_Solver/blob/main/GUI.png)
 
 
