@@ -8,66 +8,66 @@ package body dessin is
    procedure dessinerGrille is
    begin
       -- se positionner au centre sans tracer
-         leverStylet;
-         centrerStylet;
-         --baisserStylet;
+      leverStylet;
+      centrerStylet;
+      --baisserStylet;
 
-         -- orienter le stylet vers le nord
-         orienterNord;
+      -- orienter le stylet vers le nord
+      orienterNord;
 
-         -- haux gauche
-         for i in 1..2 loop
-            for c in 1..280 loop
-               deplacerStylet;
-            end loop;
-            pivoterGauche;
-         end loop;
-         for i in 1..10 loop
-            orienterNord;
-               pivoterGauche;
-               pivoterGauche;
-
-            baisserStylet;
-            for y in 1..2 loop
-               for x in 1..512 loop
-                  deplacerStylet;
-               end loop;
-               leverStylet;
-               orienterNord;
-            end loop;
-            pivoterDroite;
-            for y in 1..60 loop
-               deplacerStylet;
-            end loop;
-         end loop;
-         pivoterDroite;
-         pivoterDroite;
-         for i in 1.. 60 loop
+      -- haux gauche
+      for i in 1..2 loop
+         for c in 1..280 loop
             deplacerStylet;
          end loop;
-
-         for i in 1..10 loop
-            orienterNord;
+         pivoterGauche;
+      end loop;
+      for i in 1..10 loop
+         orienterNord;
+            pivoterGauche;
             pivoterGauche;
 
-            baisserStylet;
-            for y in 1..2 loop
-               for x in 1..540 loop
-                  deplacerStylet;
-               end loop;
-               leverStylet;
-               pivoterDroite;
-               pivoterDroite;
-            end loop;
-            pivoterGauche;
-         for y in 1..57 loop
+         baisserStylet;
+         for y in 1..2 loop
+            for x in 1..512 loop
                deplacerStylet;
             end loop;
+            leverStylet;
+            orienterNord;
          end loop;
+         pivoterDroite;
+         for y in 1..60 loop
+            deplacerStylet;
+         end loop;
+      end loop;
+      pivoterDroite;
+      pivoterDroite;
+      for i in 1.. 60 loop
+         deplacerStylet;
+      end loop;
 
-         -- revenir au centre sans tracer
-         --leverStylet;
-         centrerStylet;
+      for i in 1..10 loop
+         orienterNord;
+         pivoterGauche;
+
+         baisserStylet;
+         for y in 1..2 loop
+            for x in 1..540 loop
+               deplacerStylet;
+            end loop;
+            leverStylet;
+            pivoterDroite;
+            pivoterDroite;
+         end loop;
+         pivoterGauche;
+      for y in 1..57 loop
+            deplacerStylet;
+         end loop;
+      end loop;
+
+      -- revenir au centre sans tracer
+      --leverStylet;
+      centrerStylet;
    end dessinerGrille;
 
    ----------------
@@ -208,85 +208,85 @@ package body dessin is
             deplacerStylet;
          end loop;
       end loop;
-			baisserStylet;
-			orienterNord;
+      baisserStylet;
+      orienterNord;
 
-			for i in 1..4 loop
-				deplacerStylet;
-				pivoterDroite;
-				deplacerStylet;
-				pivoterGauche;
-				end loop;
-				pivoterDroite;
-
-
-				for j in 1..3 loop
-				deplacerStylet;
-				end loop;
-				pivoterDroite;
+      for i in 1..4 loop
+         deplacerStylet;
+         pivoterDroite;
+         deplacerStylet;
+         pivoterGauche;
+      end loop;
+      pivoterDroite;
 
 
-				for k in 1..4 loop
-				deplacerStylet;
-				pivoterGauche;
-				deplacerStylet;
-				pivoterDroite;
-				end loop;
-				orienterNord;
-				pivoterDroite;
-				pivoterDroite;
-
-				 for l in 1..3 loop
-				 deplacerStylet;
-				 end loop;
-				 pivoterDroite;
-
-				 for m in 1..3 loop
-				 deplacerStylet;
-				 pivoterGauche;
-				 deplacerStylet;
-				 pivoterDroite;
-				 end loop;
-
-				orienterNord;
-				pivoterDroite;
-				for n in 1..4 loop
-				deplacerStylet;
-				pivoterDroite;
-				deplacerStylet;
-				pivoterGauche;
-				end loop;
-				pivoterDroite;
+      for j in 1..3 loop
+         deplacerStylet;
+      end loop;
+      pivoterDroite;
 
 
-				for o in 1..3 loop
-				deplacerStylet;
-				end loop;
-				pivoterDroite;
+      for k in 1..4 loop
+         deplacerStylet;
+         pivoterGauche;
+         deplacerStylet;
+         pivoterDroite;
+      end loop;
+      orienterNord;
+      pivoterDroite;
+      pivoterDroite;
+
+      for l in 1..3 loop
+         deplacerStylet;
+      end loop;
+      pivoterDroite;
+
+      for m in 1..3 loop
+         deplacerStylet;
+         pivoterGauche;
+         deplacerStylet;
+         pivoterDroite;
+      end loop;
+
+      orienterNord;
+      pivoterDroite;
+      for n in 1..4 loop
+         deplacerStylet;
+         pivoterDroite;
+         deplacerStylet;
+         pivoterGauche;
+      end loop;
+      pivoterDroite;
 
 
-				for p in 1..4 loop
-				deplacerStylet;
-				pivoterGauche;
-				deplacerStylet;
-				pivoterDroite;
-				end loop;
-				orienterNord;
-				pivoterGauche;
+      for o in 1..3 loop
+         deplacerStylet;
+      end loop;
+      pivoterDroite;
 
-				for q in 1..3 loop
-				deplacerStylet;
-				end loop;
 
-				pivoterDroite;
-				for r in 1..4 loop
-				deplacerStylet;
-				pivoterGauche;
-				deplacerStylet;
-				pivoterDroite;
-				end loop;
+      for p in 1..4 loop
+         deplacerStylet;
+         pivoterGauche;
+         deplacerStylet;
+         pivoterDroite;
+      end loop;
+      orienterNord;
+      pivoterGauche;
 
-				leverStylet;
+      for q in 1..3 loop
+         deplacerStylet;
+      end loop;
+
+      pivoterDroite;
+      for r in 1..4 loop
+         deplacerStylet;
+         pivoterGauche;
+         deplacerStylet;
+         pivoterDroite;
+      end loop;
+
+      leverStylet;
    end dessinerTrois;
 
    --------------------
@@ -303,30 +303,30 @@ package body dessin is
             deplacerStylet;
          end loop;
       end loop;
-    baisserStylet;
-    orienterNord;
+      baisserStylet;
+      orienterNord;
 
-    pivoterDroite;
-    pivoterDroite;
+      pivoterDroite;
+      pivoterDroite;
 
-    for k in 1..10 loop
-        deplacerStylet;
-    end loop;
-    pivoterGauche;
-    for k in 1..10 loop
-        deplacerStylet;
-    end loop;
-    pivoterGauche;
-    for k in 1..10 loop
-        deplacerStylet;
-    end loop;
-    pivoterDroite;
-    pivoterDroite;
-    for k in 1..22 loop
-        deplacerStylet;
-    end loop;
+      for k in 1..10 loop
+         deplacerStylet;
+      end loop;
+      pivoterGauche;
+      for k in 1..10 loop
+         deplacerStylet;
+      end loop;
+      pivoterGauche;
+      for k in 1..10 loop
+         deplacerStylet;
+      end loop;
+      pivoterDroite;
+      pivoterDroite;
+      for k in 1..22 loop
+         deplacerStylet;
+      end loop;
 
-    leverStylet;
+      leverStylet;
    end dessinerQuatre;
 
    ------------------
@@ -348,40 +348,40 @@ package body dessin is
          deplacerStylet;
       end loop;
 
-         orienterNord;
-         baisserStylet;
-         pivoterGauche;
+      orienterNord;
+      baisserStylet;
+      pivoterGauche;
 
 
 
-         for i in 1..10 loop
-            deplacerStylet;
+      for i in 1..10 loop
+         deplacerStylet;
+      end loop;
 
+      pivoterGauche;
 
-         end loop;
-         pivoterGauche;
-         for Z in 1..10 loop
-            deplacerStylet;
+      for Z in 1..10 loop
+         deplacerStylet;
 
-         end loop;
-         pivoterGauche;
-         for k in 1..10 loop
-            deplacerStylet;
+      end loop;
+      pivoterGauche;
+      for k in 1..10 loop
+         deplacerStylet;
 
-         end loop;
-         pivoterDroite;
+      end loop;
+      pivoterDroite;
 
-         for p in 1..10 loop
-            deplacerStylet;
+      for p in 1..10 loop
+         deplacerStylet;
 
-         end loop;
-         pivoterDroite;
-         for l in 1..10 loop
-            deplacerStylet;
-         end loop;
+      end loop;
+      pivoterDroite;
+      for l in 1..10 loop
+         deplacerStylet;
+      end loop;
 
     -- postcondition
-        leverStylet;
+      leverStylet;
    end dessinerCinq;
 
    -----------------
@@ -402,35 +402,35 @@ package body dessin is
       for i in 1..18 loop
          deplacerStylet;
       end loop;
-			baisserStylet;
-			orienterNord;
-			pivoterGauche;
+      baisserStylet;
+      orienterNord;
+      pivoterGauche;
 
-			for i in 1..10 loop
-			deplacerStylet;
-			end loop;
-			pivoterGauche;
+      for i in 1..10 loop
+         deplacerStylet;
+      end loop;
+      pivoterGauche;
 
-			for j in 1..20 loop
-			deplacerStylet;
-			end loop;
-			pivoterGauche;
+      for j in 1..20 loop
+         deplacerStylet;
+      end loop;
+      pivoterGauche;
 
-			for k in 1..10 loop
-			deplacerStylet;
-			end loop;
-			pivoterGauche;
+      for k in 1..10 loop
+         deplacerStylet;
+      end loop;
+      pivoterGauche;
 
-			for l in 1..10 loop
-			deplacerStylet;
-			end loop;
-			pivoterGauche;
+      for l in 1..10 loop
+         deplacerStylet;
+      end loop;
+      pivoterGauche;
 
-			for m in 1..10 loop
-			deplacerStylet;
-			end loop;
+      for m in 1..10 loop
+         deplacerStylet;
+      end loop;
 
-			leverStylet;
+      leverStylet;
    end dessinerSix;
 
    ------------------
@@ -489,32 +489,31 @@ package body dessin is
          end loop;
       end loop;
       orienterNord;
-    baisserStylet;
-    orienterNord;
-    for k in 1..4 loop
-        for i in 1..8 loop
+      baisserStylet;
+      orienterNord;
+      for k in 1..4 loop
+         for i in 1..8 loop
+               deplacerStylet;
+            end loop;
+            pivoterDroite;
             deplacerStylet;
-         end loop;
+            pivoterGauche;
+            deplacerStylet;
          pivoterDroite;
-         deplacerStylet;
-         pivoterGauche;
-         deplacerStylet;
-        pivoterDroite;
-    end loop;
-    pivoterGauche;
-	pivoterGauche;
-    for k in 1..3 loop
-        for k in 1..8 loop
+      end loop;
+      pivoterGauche;
+      pivoterGauche;
+      for k in 1..3 loop
+         for k in 1..8 loop
             deplacerStylet;
          end loop;
          if k /= 3 then
-         pivoterGauche;
-         deplacerStylet;
-         pivoterDroite;
-         deplacerStylet;
+            pivoterGauche;
+            deplacerStylet;
+            pivoterDroite;
+            deplacerStylet;
             pivoterGauche;
          end if;
-
       end loop;
       leverStylet;
    end dessinerHuit;
@@ -562,8 +561,6 @@ package body dessin is
       end loop;
       pivoterGauche;
 
-
-
       leverStylet;
    end dessinerNeuf;
 
@@ -595,9 +592,9 @@ package body dessin is
             dessinerTrois;
          elsif n = 4 then
             dessinerQuatre;
-            elsif n = 5 then
+         elsif n = 5 then
             dessinerCinq;
-            elsif n = 6 then
+         elsif n = 6 then
             dessinerSix;
          elsif n = 7 then
             dessinerSept;
